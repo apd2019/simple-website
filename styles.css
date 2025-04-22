@@ -34,15 +34,20 @@ body {
   nav ul li a:hover {
     color: #ff69b4; /* Blush Pink */
   }
-  @media (max-width: 768px) {
+  @media (max-width: 100px) {
     nav ul {
-      flex-direction: column;
+      flex-direction: row;
       background-color: #6a5acd;
       position: absolute;
       top: 60px;
       right: 0;
       width: 200px;
       display: none;
+      /* justify-content: space-between; */
+    }
+    nav ul li a{
+      padding: 8px 10px; /* Slightly reduce padding on mobile */
+      font-size: 0.9em;
     }
     nav ul.active {
       display: flex;
@@ -138,6 +143,8 @@ font-size: 1.1rem;
 }
 
 /* Services section */
+
+
 .services-section {
 padding: 4rem 2rem;
 background: linear-gradient(135deg, #d3d3d3, #f1f1f1);
@@ -188,8 +195,9 @@ line-height: 1.6;
 
 @media (max-width: 768px) {
 .services-container {
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  /* justify-content: center; */
 }
 
 .service-card {
@@ -354,7 +362,7 @@ color: #333;
 
 @media (max-width: 768px) {
 .contact-container {
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
