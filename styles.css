@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f1f1f1 0%, #d3d3d3 100%);
+    color: #333;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #6a5acd; /* Digital Lavender */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  nav .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  nav ul li a:hover {
+    color: #ff69b4; /* Blush Pink */
+  }
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      background-color: #6a5acd;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      display: none;
+    }
+    nav ul.active {
+      display: flex;
+    }
+    nav .menu-toggle {
+      display: block;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+  nav .menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+.navbar {
+  padding: 0.8rem;
+}
+
+.summary {
+  margin-top: 50px; /* Adjust based on new navbar height */
+}
+}
+
+  /* summary section */
+
+  .summary-box {
+    background: linear-gradient(135deg, #6a5acd, #ff69b4); /* Digital Lavender to Blush Pink */
+    color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .summary-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .summary-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .summary-box {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+  
+    .summary-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .summary-box p {
+      font-size: 1rem;
+    }
+  }
+
+/* about section */
+.about-section {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 4rem 2rem;
+}
+
+.about-box {
+max-width: 800px;
+padding: 2rem;
+background: linear-gradient(135deg, #6a5acd, #ff69b4); /* Digital Lavender to Blush Pink */
+color: #fff;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-box h2 {
+margin-top: 0;
+font-size: 2rem;
+color: #fff;
+}
+
+.about-box p {
+line-height: 1.6;
+font-size: 1.1rem;
+}
+
+/* Services section */
+.services-section {
+padding: 4rem 2rem;
+background: linear-gradient(135deg, #d3d3d3, #f1f1f1);
+text-align: center;
+}
+
+.services-section h2 {
+font-size: 2.5rem;
+margin-bottom: 2rem;
+color: #333;
+}
+
+.services-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+.service-card {
+background: linear-gradient(135deg, #6a5acd, #ff69b4);
+color: #fff;
+padding: 2rem;
+border-radius: 12px;
+width: 300px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+transform: translateY(-10px);
+}
+
+.service-card i {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.service-card h3 {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.service-card p {
+font-size: 1rem;
+line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+.services-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card {
+  width: 100%;
+  max-width: 400px;
+}
+}
+
+/* Blog section */
+.blog-section {
+padding: 4rem 2rem;
+background: linear-gradient(135deg, #f1f1f1, #d3d3d3);
+text-align: center;
+}
+
+.blog-section h2 {
+font-size: 2.5rem;
+margin-bottom: 2rem;
+color: #333;
+}
+
+.blog-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+.blog-card {
+background: #fff;
+border-radius: 12px;
+overflow: hidden;
+width: 300px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+transform: translateY(-10px);
+}
+
+.blog-card img {
+width: 100%;
+height: auto;
+}
+
+.blog-content {
+padding: 1rem;
+}
+
+.blog-content h3 {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+color: #6a5acd;
+}
+
+.blog-content p {
+font-size: 1rem;
+color: #555;
+margin-bottom: 1rem;
+}
+
+.blog-content a {
+text-decoration: none;
+color: #ff69b4;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+.blog-content a:hover {
+color: #6a5acd;
+}
+
+@media (max-width: 768px) {
+.blog-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-card {
+  width: 100%;
+  max-width: 400px;
+}
+}
+
+/* contact us */
+.contact-section {
+padding: 4rem 2rem;
+background: linear-gradient(135deg, #d3d3d3, #f1f1f1);
+text-align: center;
+}
+
+.contact-section h2 {
+font-size: 2.5rem;
+margin-bottom: 2rem;
+color: #333;
+}
+
+.contact-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+.contact-form {
+background: linear-gradient(135deg, #6a5acd, #ff69b4);
+padding: 2rem;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+width: 100%;
+max-width: 500px;
+display: flex;
+flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+padding: 0.75rem;
+margin-bottom: 1rem;
+border: none;
+border-radius: 8px;
+font-size: 1rem;
+}
+
+.contact-form button {
+padding: 0.75rem;
+background-color: #fff;
+color: #6a5acd;
+border: none;
+border-radius: 8px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+background-color: #ff69b4;
+color: #fff;
+}
+
+.contact-info {
+background: #fff;
+padding: 2rem;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+width: 100%;
+max-width: 400px;
+text-align: left;
+}
+
+.contact-info h3 {
+margin-top: 0;
+color: #6a5acd;
+}
+
+.contact-info p {
+margin: 0.5rem 0;
+color: #333;
+}
+
+@media (max-width: 768px) {
+.contact-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form,
+.contact-info {
+  width: 100%;
+  max-width: 100%;
+}
+}
